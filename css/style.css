@@ -4,6 +4,9 @@
 
 
 }
+i,a,button{
+    transition-duration: 0.3s;
+}
 
 img {
     width: 100%;
@@ -92,8 +95,10 @@ nav .container .logo {
 }
 
 nav .container .navs {
-    width: 60%;
+    width: 75%;
     margin-left: 10px;
+    display: flex;
+    justify-content: space-between;
 
 
 }
@@ -124,7 +129,20 @@ nav .container .logo h4 {
     font-size: 24px;
     padding-top: 20px;
 }
-
+nav .container i{
+    font-size: 30px;
+    padding-top: 10px;
+    color: white;
+    /* display: none; */
+    cursor: pointer;
+}
+nav .container .list-icon a i{
+    
+    color: white;
+}
+nav .navs .toggle-menu{
+    display: none;
+}
 /* **************************************** */
 .Home {
     background-image: url(../photo/slider/slider-01.jpg);

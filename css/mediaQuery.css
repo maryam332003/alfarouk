@@ -5,37 +5,49 @@ all and (max-width: 768px) {
         padding: 0;
     }
 
+    /*--------------> NavBar*/
+    nav .navs .toggle-menu {
+        display: flex !important;
+        transition-duration: 0.5s;
+    }
+
     nav {
         position: absolute;
     }
 
-    nav .container {
+    nav .navs {
         display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+        justify-content: end;
+        width: 20% !important;
+
     }
 
-    nav .container .navs ul {
-        display: flex;
+    nav .navs ul {
+        display: none !important;
+
+      
+    }
+
+    nav .container .toggle-menu:hover+ul {
+        display: flex !important;
         flex-direction: column;
-        overflow: hidden;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 95%;
+        background-color: #333333;
     }
 
-    nav .container .logo {
-        margin: 0;
-        padding: 0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    /***********************************************************/
+    /*--------------> Home*/
     .Home {
         position: relative;
     }
+    .Home .overlay .caption{
+        padding-top: 400px;
+    }
 
 
-    /********************************************************/
+    /*--------------> About*/
     .about .container {
         display: flex;
         flex-direction: column;
@@ -53,7 +65,7 @@ all and (max-width: 768px) {
 
     }
 
-    /*****************************************/
+    /*--------------> services*/
     .services .container {
         width: 100%;
         display: flex;
@@ -79,7 +91,7 @@ all and (max-width: 768px) {
 
     }
 
-    /**********************************************/
+    /*--------------> portfolio*/
     .portfolio .container {
         display: flex;
         flex-direction: column;
@@ -107,7 +119,7 @@ all and (max-width: 768px) {
 
     }
 
-    /**********************************************/
+    /*--------------> testimonial*/
     .testimonial .container {
         display: flex;
         flex-direction: column;
@@ -118,34 +130,34 @@ all and (max-width: 768px) {
         margin-bottom: 10px;
     }
 
-    /*******************************************************/
-    @media only screen and (max-width: 992px){
-     
-        .client .client-item .item-content  , .client .client-item .item-photo  {
-            /* width: 100%; */
-        }
-    }
-    
+
+
     @media only screen and (max-width: 768px) {
-        .client .container{
-            width:100%;
+        .client .container {
+            width: 100%;
             margin: auto;
         }
+
         .client .client-item {
             width: 80%;
-            
+
         }
-        .client .client-item .item-content  , .client .client-item .item-photo  {
+
+        .client .client-item .item-content,
+        .client .client-item .item-photo {
             width: 100%;
         }
-        .client .container .item-photo{
+
+        .client .container .item-photo {
             width: 25%;
         }
     }
-    /*******************************************************/
-    .blog .container{
+
+    /*--------------> Blog*/
+    .blog .container {
         width: 90%;
     }
+
     .blog .container .blog-title {
         width: 100%;
     }
@@ -159,34 +171,40 @@ all and (max-width: 768px) {
 
     }
 
-    .blog .container .blog-body .webDesign-blog,.development-blog,.full-blog{
+    .blog .container .blog-body .webDesign-blog,
+    .development-blog,
+    .full-blog {
         width: 100%;
     }
 
-/**********************************/
-.contact .container{
-    display: flex;
-    flex-direction: column;
-    width: 90%;
-}
-.contact .container .contact-heading{
-    width: 100%;
-}
-.contact .container form input{
-    width: 100%;
-}
-/*************************/
-.footer .container .social-links{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.footer .container{
-    display: flex;
-    flex-direction: column;
-    padding-bottom:51px ;
-    width: 80%;
-}
+    /*--------------> contact*/
+    .contact .container {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .contact .container .contact-heading {
+        width: 100%;
+    }
+
+    .contact .container form input {
+        width: 100%;
+    }
+
+    /*--------------> footer*/
+    .footer .container .social-links {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer .container {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 51px;
+        width: 80%;
+    }
 
 
 
