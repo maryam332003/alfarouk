@@ -9,15 +9,18 @@ all and (max-width: 768px) {
     nav .navs .toggle-menu {
         display: flex !important;
         transition-duration: 0.5s;
+       
     }
 
     nav {
         position: absolute;
+        /* background-color: azure; */
     }
 
     nav .navs {
         display: flex;
         justify-content: end;
+        align-items: center;
         width: 20% !important;
 
     }
